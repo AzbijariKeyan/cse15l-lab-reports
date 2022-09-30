@@ -64,5 +64,8 @@
    Also, if you want to confirm that you copied a file to the remote server without having to log in and exit, you can type in
    `ssh cs15lfa22zz@ieng6.ucsd.edu "ls"`, the quotes wil automically run the command and logout for you.
    And my personal favorite thing to do when I am in terminal is to use the up-arrow to run previous commands or add to them.
+   Like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/optimized.png)
+   
+   ***
    
    
