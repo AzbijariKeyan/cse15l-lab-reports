@@ -3,7 +3,7 @@
 
 ***
 1. First, you are going to want to install Visual Studio Code by going [here](https://code.visualstudio.com/), and clicking
-   download for your Operating System. After opeing VSCode you should see something like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/VSStarup.png)
+   download for your Operating System. After opeing VSCode you should see something like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/VSStartup.png)
    
 2. After installing, we are going to try to remotely connect to a server at UCSD.  If you are on Windows you will need to 
    install the program *OpenSSH* [here](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). This will allow you to connect to other systems that use this type of account.
