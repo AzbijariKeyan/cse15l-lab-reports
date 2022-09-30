@@ -11,7 +11,7 @@
    Now you can either use the terminal built in to your computer or you can use Visual Studio Code. I personally opted to use the
    built in terminal. If you are using VSCode press *Ctrl* or *Command +*. Now input the command `ssh cs15lfa22zz@ieng6.ucsd.edu` but 
    replace the `zz` with the letters in your course-specific account.
-   Input your password and connect to the server! It should look something like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/Server Login.png)
+   Input your password and connect to the server! It should look something like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/ServerLogin.png)
    
 3. Now try using some commands! Some of the basic commands are `cd`, `ls`, `pwd`, `mkdir`, and `cp`. After using some commands 
    you can log out of the remote server by using *Ctrl-D* or use the command `exit`. Mine looked like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/UsingCommands.png)
