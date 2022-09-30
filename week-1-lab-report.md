@@ -3,7 +3,7 @@
 
 ***
 1. First, you are going to want to install Visual Studio Code by going [here](https://code.visualstudio.com/), and clicking
-   download for your Operating System.
+   download for your Operating System. After opeing VSCode you should see something like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/VSStarup.png)
    
 2. After installing, we are going to try to remotely connect to a server at UCSD.  If you are on Windows you will need to 
    install the program *OpenSSH* [here](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). This will allow you to connect to other systems that use this type of account.
@@ -11,10 +11,10 @@
    Now you can either use the terminal built in to your computer or you can use Visual Studio Code. I personally opted to use the
    built in terminal. If you are using VSCode press *Ctrl* or *Command +*. Now input the command `ssh cs15lfa22zz@ieng6.ucsd.edu` but 
    replace the `zz` with the letters in your course-specific account.
-   Input your password and connect to the server! It should look something like this: 
+   Input your password and connect to the server! It should look something like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/Server Login.png)
    
 3. Now try using some commands! Some of the basic commands are `cd`, `ls`, `pwd`, `mkdir`, and `cp`. After using some commands 
-   you can log out of the remote server by using *Ctrl-D* or use the command `exit`.
+   you can log out of the remote server by using *Ctrl-D* or use the command `exit`. Mine looked like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/UsingCommands.png)
 
 4. Now we are going totry to copy files from our local system to the server. The command to do this is `scp`, and this command is onyl run from the local 
    system not the server. We are going to create a file called `WhereAmI.java` on our local system and in that file include the code:
@@ -40,7 +40,7 @@
    Enter the same password you used to login to `ssh`.
    
    Then log in to the server using `ssh` and use the command `ls` to see the file in your home directory.
-   Now you can use the `javac` and `java` commands because java is installed on the server.
+   Now you can use the `javac` and `java` commands because java is installed on the server. Here is me copying `WhereAmI.java` and running it on the server: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/RunningJava.png)
    
 5. Now that we know how to log in, copy files, and run commands, it can get annoying to type in your password everytime you want to log in or copy a file.
    To fix this we can use `ssh` keys. By using `ssh-keygen` we can create two keys, one stays on the server and the other stays on your local system. `ssh` 
@@ -57,6 +57,7 @@
    Now you should be able to `ssh` and `scp` without having to type in your password which can save a lot of time especially if you are switching
    back and forth multiple times.
    
+   Here is me setting up my `ssh` keys: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/Keys.png)
    
 6. To help optimize remote running, I would suggest copying your `cs15lfa22zz@ineg6.ucsd.edu` when you are working on the server so you will not have to 
    enter that everytime and instead just use `Command-V`.
