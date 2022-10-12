@@ -13,7 +13,7 @@
    replace the `zz` with the letters in your course-specific account.
    Input your password and connect to the server! It should look something like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/ServerLogin.png)
    
-3. Now try using some commands! Some of the basic commands are `cd`, `ls`, `pwd`, `mkdir`, and `cp`. After using some commands 
+3. Now try using some commands! Some of the basic commands are `cd`, `ls`, `pwd`, `mkdir`, and `cp`. You will be using these commands alot, you can use`cd` to change your working directory and access different files. `ls` will list the files in your current directory. `pwd` will write the full path of the current directory you are in. `mkdir` will make a new empty directory whose name is defined by the path. And `cp` is used to copy files from one directory to another. After using some commands 
    you can log out of the remote server by using *Ctrl-D* or use the command `exit`. Mine looked like this: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/UsingCommands.png)
 
 4. Now we are going totry to copy files from our local system to the server. The command to do this is `scp`, and this command is onyl run from the local 
@@ -35,7 +35,7 @@
    java WhereAmI
    ...
    
-   Now that you have a file lets try copying it to the server. In your terminal make sure you are in the directory where your java file is located 
+   Now that you have a file lets try copying it to the server. The format for `scp` is `scp <filename1> <filename2> <username@servername>:<path>`. In your terminal make sure you are in the directory where your java file is located 
    and type in: `scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/`
    Enter the same password you used to login to `ssh`.
    
