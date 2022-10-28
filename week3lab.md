@@ -77,6 +77,7 @@ handleRequest method, and specifically the `if` and the `else-if` statements. Th
 changes when I want to search for something in the list. It changes before anything happens in code.
 
 Here are screenshots of what the page looks like with the url in frame: ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/URL.png)
+![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/AddToSearchEngine.png)
 
 ***
 
@@ -92,7 +93,7 @@ The first bug I saw was in `ArrayExamples.java`. The test I ran to exploit this 
   }
 ```
 The output I recieved from this test was, “arrays first differed at element [0]; expected:<1> but was:<0>”.
-The bug is `arr[i] = newArray[arr.length - i - 1];`, this will always put 0 into the array.
+The bug is `arr[i] = newArray[arr.length - i - 1];`, this will always put 0 into the array. To fix this, we write `newArray[i] = arr[arr.length - i - 1`.
 The test was expecting the arrays to be switched, but instead the bug will put 0 into the array instead because there is nothing in `newArray`.
 
 The second bug I saw was in `ListExamples.java`. The test I ran to exploit this bug was:
@@ -117,10 +118,11 @@ The second bug I saw was in `ListExamples.java`. The test I ran to exploit this 
     }
 ```
 The output I recieved from this test was, "OutOfMemoryError: Java heap space".
-The bug is `index1 += 1` in the third `while` loop, this should be `index2 += 1` instead. 
+The bug is `index1 += 1` in the third `while` loop. 
 The test was expecting a return of [a,b,c,d] but instead because of the incorrect `while` loop we will always enter an infinite loop before we return 
 anything. It wouldn't matter what you input, at the third `while` loop the program will always enter an infinite loop, unless after the first `while` loop
-`index2` is already larger than `list2`.
+`index2` is already larger than `list2`. To fix this, we write `index2 += 1;` instead of `index1 += 1;` in the third while loop on line 43.
+This will allow `index2` to update in the loop and it will no longer be an infinite loop.
 
 
 
