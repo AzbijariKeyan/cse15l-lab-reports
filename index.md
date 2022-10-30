@@ -20,4 +20,4 @@
 
 [Week 3 Lab Report](https://azbijarikeyan.github.io/cse15l-lab-reports/week3lab.html)
 
-[Week 5 Lab Report](https://github.com/AzbijariKeyan/cs15l-lab3/Lab3.html)
+[Week 5 Lab Report](https://github.com/AzbijariKeyan/cs15l-lab3/LabReport3.html)
