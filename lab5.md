@@ -41,7 +41,7 @@ fi
 ```
 Here are some examples of my autograder running: 
 
-![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/ListExamplesCorrect.png)
+![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/ListExamplesCorrected.png)
 In this examples my grader is running on a correct version of ListExamples. The student gets full credit.
 
 ![Image](https://azbijarikeyan.github.io/cse15l-lab-reports/ListExamplesSyntaxError.png)
